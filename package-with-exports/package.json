@@ -1,0 +1,36 @@
+{
+    "name": "package-with-exports",
+    "version": "1.0.0",
+    "description": "",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "exports": {
+        "./a": {
+            "default": {
+                "types": "./typings/a.d.ts",
+                "default": "./dist/a.js"
+            }
+        },
+        "./b": {
+            "default": {
+                "types": "./typings/b.d.ts",
+                "default": "./dist/b.js"
+            }
+        },
+        "./c": {
+            "default": {
+                "types": "./typings/c.d.ts",
+                "default": "./dist/c.js"
+            }
+        },
+        "./globaltypes": {
+            "default": {
+                "types": "./typings/global.d.ts"
+            }
+        }
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC"
+}
